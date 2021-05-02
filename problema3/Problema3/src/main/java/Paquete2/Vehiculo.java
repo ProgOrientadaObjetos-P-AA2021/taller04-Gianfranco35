@@ -15,11 +15,11 @@ public class Vehiculo {
     private double valorVehiculo;
     private double valorMatricula;
 
-    public Vehiculo() {
-        this.cedulaDueno = "1104803620";
-        this.marcaVehiculo = "Toyota";
-        this.anoFabricante = 2015;
-        this.valorVehiculo = 30000;
+    public Vehiculo(String ceduladueno, String marcaVehiculo, int anoFabricante, double valorVehiculo ) {
+        this.cedulaDueno = ceduladueno;
+        this.marcaVehiculo = marcaVehiculo;
+        this.anoFabricante = anoFabricante;
+        this.valorVehiculo = valorVehiculo;
     }
 
     public void establecerCedulaDueno(String cd) {
@@ -68,6 +68,6 @@ public class Vehiculo {
                 + this.marcaVehiculo + "\n Año Fabricante: "
                 + this.anoFabricante + "\nValor Vehiculo: "
                 + this.valorVehiculo + "\nValor Matricula: "
-                + this.valorMatricula;
+                + this.valorMatricula + "\n" ;
     }
 }
